@@ -1,0 +1,114 @@
+{
+  "rooms": [
+    {
+      "originalPath": "images/rooms/avatar.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897294/rooms/avatar.avif",
+      "publicId": "rooms/avatar",
+      "filename": "avatar.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-1.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897296/rooms/room-1.jpg",
+      "publicId": "rooms/room-1",
+      "filename": "room-1.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-10.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897297/rooms/room-10.jpg",
+      "publicId": "rooms/room-10",
+      "filename": "room-10.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-11.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897298/rooms/room-11.jpg",
+      "publicId": "rooms/room-11",
+      "filename": "room-11.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-12.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897299/rooms/room-12.jpg",
+      "publicId": "rooms/room-12",
+      "filename": "room-12.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-13.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897301/rooms/room-13.jpg",
+      "publicId": "rooms/room-13",
+      "filename": "room-13.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-14.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897303/rooms/room-14.jpg",
+      "publicId": "rooms/room-14",
+      "filename": "room-14.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-15.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897304/rooms/room-15.jpg",
+      "publicId": "rooms/room-15",
+      "filename": "room-15.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-2.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897305/rooms/room-2.jpg",
+      "publicId": "rooms/room-2",
+      "filename": "room-2.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-3.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897307/rooms/room-3.jpg",
+      "publicId": "rooms/room-3",
+      "filename": "room-3.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-4.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897308/rooms/room-4.jpg",
+      "publicId": "rooms/room-4",
+      "filename": "room-4.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-5.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897310/rooms/room-5.jpg",
+      "publicId": "rooms/room-5",
+      "filename": "room-5.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-6.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897311/rooms/room-6.jpg",
+      "publicId": "rooms/room-6",
+      "filename": "room-6.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-7.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897313/rooms/room-7.jpg",
+      "publicId": "rooms/room-7",
+      "filename": "room-7.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-8.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897314/rooms/room-8.jpg",
+      "publicId": "rooms/room-8",
+      "filename": "room-8.jpg"
+    },
+    {
+      "originalPath": "images/rooms/room-9.jpg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897315/rooms/room-9.jpg",
+      "publicId": "rooms/room-9",
+      "filename": "room-9.jpg"
+    }
+  ],
+  "documents": [
+    {
+      "originalPath": "uploads/documents/1769694783363-781797935-WhatsApp Image 2026-01-29 at 19.20.33.jpeg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897317/documents/1769694783363-781797935-WhatsApp%20Image%202026-01-29%20at%2019.20.33.jpg",
+      "publicId": "documents/1769694783363-781797935-WhatsApp Image 2026-01-29 at 19.20.33",
+      "filename": "1769694783363-781797935-WhatsApp Image 2026-01-29 at 19.20.33.jpeg"
+    },
+    {
+      "originalPath": "uploads/documents/1770143058929-452719621-WhatsApp Image 2026-01-29 at 19.20.33.jpeg",
+      "cloudinaryUrl": "https://res.cloudinary.com/dn5bsmtaf/image/upload/v1772897319/documents/1770143058929-452719621-WhatsApp%20Image%202026-01-29%20at%2019.20.33.jpg",
+      "publicId": "documents/1770143058929-452719621-WhatsApp Image 2026-01-29 at 19.20.33",
+      "filename": "1770143058929-452719621-WhatsApp Image 2026-01-29 at 19.20.33.jpeg"
+    }
+  ]
+}

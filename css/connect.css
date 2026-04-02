@@ -1,0 +1,349 @@
+/* Connect Page Specific Styles - Unique Dark Neon Cyberpunk Theme with Advanced Animations */
+:root {
+  --neon-blue: #00ffff;
+  --neon-green: #39ff14;
+  --dark-bg: #0a0a0a;
+  --card-bg: rgba(20, 20, 20, 0.9);
+  --glow-shadow: 0 0 20px var(--neon-blue);
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body {
+  background: var(--dark-bg);
+  font-family: "Inter", sans-serif;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 255, 255, 0.1),
+    transparent 70%
+  );
+  animation: particleFloat 10s infinite linear;
+  z-index: -1;
+}
+
+/* Connect Section - Futuristic Layout */
+.connect-section {
+  padding: 4rem 0;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.connect-section h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-shadow: var(--glow-shadow);
+  background: linear-gradient(45deg, var(--neon-blue), var(--neon-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neonFlicker 2s infinite alternate;
+}
+
+/* Progress Bar - Advanced Wave Animation */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: var(--glow-shadow);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--neon-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 255, 0.3),
+    transparent
+  );
+  animation: waveScan 3s infinite;
+}
+
+.progress-step {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 10px;
+  margin: 0 0.25rem;
+  transition: var(--transition);
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.progress-step.active {
+  background: var(--neon-green);
+  box-shadow: 0 0 15px var(--neon-green);
+  animation: pulseActive 1.5s infinite;
+  border-color: var(--neon-green);
+}
+
+.progress-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  width: 2rem;
+  height: 2px;
+  background: var(--neon-blue);
+  transform: translateY(-50%);
+  animation: connectLine 2s infinite;
+}
+
+.progress-step.active:not(:last-child)::after {
+  background: var(--neon-green);
+  animation: connectLineActive 2s infinite;
+}
+
+/* Connect Form - 3D Interactive Card */
+.connect-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: var(--glow-shadow);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--neon-blue);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: var(--transition);
+}
+
+.connect-form:hover {
+  transform: rotateX(5deg) rotateY(-5deg) translateZ(20px);
+  box-shadow: 0 20px 50px var(--neon-blue);
+}
+
+.connect-form::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(
+    45deg,
+    var(--neon-blue),
+    var(--neon-green),
+    var(--neon-blue)
+  );
+  border-radius: 25px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.connect-form:hover::after {
+  opacity: 0.5;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--neon-green);
+  box-shadow: 0 0 20px var(--neon-green);
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+  color: transparent;
+  animation: placeholderScan 1s infinite;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.connect-form button {
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(45deg, var(--neon-blue), var(--neon-green));
+  color: var(--dark-bg);
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--glow-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-form button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.connect-form button:hover::before {
+  left: 100%;
+}
+
+.connect-form button:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px var(--neon-green);
+}
+
+/* Custom Advanced Animations */
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+@keyframes neonFlicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes waveScan {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes pulseActive {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px var(--neon-green);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px var(--neon-green);
+  }
+}
+
+@keyframes connectLine {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes connectLineActive {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scaleY(1);
+  }
+  50% {
+    transform: translateY(-50%) scaleY(1.5);
+  }
+}
+
+@keyframes placeholderScan {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .connect-section h1 {
+    font-size: 2.5rem;
+  }
+  .connect-form {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  .progress-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .progress-step {
+    margin: 0;
+  }
+}
